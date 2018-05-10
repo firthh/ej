@@ -38,18 +38,16 @@ With just java:
 ```
 > time java -jar target/ej-0.1.0-SNAPSHOT-standalone.jar -ft testfile.edn
 
-{"hello":"world","some":123,"numbers":123.123}
-"Elapsed time: 20.982972 msecs"
-java -jar target/ej-0.1.0-SNAPSHOT-standalone.jar -ft testfile.edn  1.81s user 0.22s system 131% cpu 1.542 total
+"Elapsed time: 26.288781 msecs"
+java -jar target/ej-0.1.0-SNAPSHOT-standalone.jar -ft testfile.edn  1.73s user 0.11s system 192% cpu 0.956 total
 ```
 
 With binary compiled by Graal:
 ```
 > time ej -ft testfile.edn
 
-{"hello":"world","some":123,"numbers":123.123}
-"Elapsed time: 1.363866 msecs"
-ej -ft testfile.edn  0.01s user 0.00s system 64% cpu 0.013 total
+"Elapsed time: 2.177193 msecs"
+ej -ft testfile.edn  0.00s user 0.00s system 70% cpu 0.011 total
 ```
 ## License
 
